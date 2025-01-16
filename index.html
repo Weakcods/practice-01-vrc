@@ -4,37 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of Joshua Bacay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     body {
-        font-family: Poppins, sans-serif;
-        text-align: center;
-        background-color: #f4f4f4;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
     }
-    .user {
+
+    nav {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    nav a {
+        text-decoration: none;
         color: #333;
-        margin-top: 20%;
-        font-size: 30px;
+        font-weight: 600;
+        transition: color 0.3s;
     }
-    .about {
-        margin-top: 10%;
+
+    nav a:hover {
+        color: #007bff;
     }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .user {
+        margin-top: 100px;
+        text-align: center;
+        animation: fadeIn 1s ease-in;
+    }
+
+    .user h1 {
+        font-size: 3rem;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+    }
+
+    .about.contact {
+        margin-top: 4rem;
+        text-align: center;
+    }
+
+    .about h2.contact {
+        color: #2c3e50;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
     .description {
-        margin-top: 5%;
-        font-size: 20px;
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        margin: 2rem auto;
+        max-width: 800px;
+        line-height: 1.6;
     }
+    
+   
 </style>
 <body>
-    <div class="user">
-        <h1>Joshua Bacay</h1>
-    </div>
-   
-    <div class="about">
-        <h2>About Me</h2>
-    </div>
-    <div class="description">
-        <p>Hi! I'm Joshua Bacay, a web developer. I'm a graduate of Bachelor of Science in Information Technology. I have a passion for web development and I love to create websites that are user-friendly and responsive. I'm also a fast learner and I'm always eager to learn new technologies.</p>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <div class="container">
+        <div class="user" id="home">
+            <h1>Joshua Bacay</h1>
+            <p> Jr. Web Developer & Ui-Ux Designers</p>
+        </div>
+       
+        <div class="about" id="about">
+            <h2>About Me</h2>
+            <div class="description">
+                <p>Hi! I'm Joshua Bacay, I'm studying for a Bachelor of Science in Information Technology. I have a passion for web development and I love to create websites that are user-friendly and responsive. I'm also a fast learner and I'm always eager to learn new technologies.</p>
+            </div>
+        </div>
+
+        <div class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="description">
+                <p>Coming soon...</p>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <div class="description">
+                <p>Email: 202180175@psu.palawan.edu.ph</p>
+                <p>Github: <a href="https://github.com/Weakcods" target="_blank">https://github.com/Weakcods</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
