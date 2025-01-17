@@ -84,6 +84,41 @@
         max-width: 800px;
         line-height: 1.6;
     }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .project-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .project-card h2 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+    }
+
+    .project-card p {
+        margin-bottom: 1rem;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
 </style>
 <body>
     <nav>
@@ -98,7 +133,7 @@
     <!-- Home -->
     <div class="container">
         <div class="user" id="home">
-            <h1>Joshua Bacay</h1>
+            <h1>Hi!, I'm Joshua Bacay</h1>
             <p> Jr. Web Developer & Ui-Ux Designers</p>
         </div>
     </div>
@@ -116,14 +151,18 @@
     <div class="container">
         <div class="projects" id="projects">
             <h2>Projects</h2>
-            <div class="description">
-                <h2>Gate-Pass</h2>
-                <p>This project is static only frontend deveplment (last semester: tech stack use is : React,Ts,Node.js,Vite)</p>
-            </div>
-
-            <div class="description">
-                <h2>Mind-Master</h2>
-                <p> I only develop as a hobby, this project like a Quizlet, that user can review notes into a flashcards.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h2>Gate-Pass</h2>
+                    <p>This project is static only frontend development (last semester: tech stack used is: React, Ts, Node.js, Vite)</p>
+                    <img src="assets/img1.jpg" alt="Gate-Pass Project">
+                </div>
+                
+                <div class="project-card">
+                    <h2>Mind-Master</h2>
+                    <p>I only develop as a hobby, this project is like Quizlet, where users can review notes using flashcards.</p>
+                    <img src="assets/img1.jpg" alt="Mind-Master Project">
+                </div>
             </div>
         </div>
     </div>
